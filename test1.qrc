@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="backGif">
+    <file>images/vesit.png</file>
+    <file>images/abc.png</file>
+    <file>images/loading.gif</file>
+    <file>images/a.png</file>
+    <file>images/gif2.gif</file>
+  </qresource>
+  <qresource prefix="login">
+    <file>images/login.gif</file>
+    <file>images/a.png</file>
+  </qresource>
+</RCC>
