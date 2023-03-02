@@ -256,7 +256,7 @@ class Window1(object):
             speak("Generating dataset completed!!!")
 
     def train_classifier(self):
-        data_dir = "C:/Users/Dell/OneDrive/Face_Recognition/data"
+        data_dir = "N:\Vesistant\data"
         path = [os.path.join(data_dir, f) for f in os.listdir(data_dir)]
         msg = QMessageBox()
         faces = []

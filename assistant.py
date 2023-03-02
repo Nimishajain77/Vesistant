@@ -9,8 +9,8 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 import pprint,sys,datetime,pyautogui,wikipedia,winshell,wolframalpha
 from random import choice
-import mysql.connector
-import chatbot
+# import mysql.connector
+
 
 obj = AiAssistant()
 
@@ -38,19 +38,20 @@ class MainThread(QThread):
 
     def ExecuteCommands(self):
         atStart()
-        # wishMe()
+        wishMe()
         speak("Hello I am vesistant.....How can I help you?")
-        # name = obj.mic_input()
-        # speak("Hello" + name)
-        # speak("How are you?")
-        # health = obj.mic_input()
-        # if "fine" in health or "good" in health or "hale and hearty" in health or "in pink of health" in health:
-        #     speak("Nice to know that"+name)
-        #     speak("Please tell me how can I help you?")
+        name = obj.mic_input()
+        speak("Hello" + name)
+        speak("How are you?")
+        health = obj.mic_input()
+        if "fine" in health or "good" in health or "hale and hearty" in health or "in pink of health" in health:
+            speak("Nice to know that"+name)
 
         while True:
+        
+            
             command = obj.mic_input()
-            #chatbot.main()
+            
 
             if 'open whatsapp web' in command or "open whatsapp" in command or "whatsapp" in command:  # checked
                 obj.open_whatsapp_web()

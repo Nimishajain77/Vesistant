@@ -14,14 +14,14 @@ import homePage
 import mysql.connector
 import cv2
 from txttsp import speak
-import gui8
+import ui2
 from Ai_Assistant import AiAssistant
 from PyQt5.QtCore import QTimer, QTime, QDate, Qt
 from PyQt5.QtGui import QMovie
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-# from gui8 import Ui_MainWindow
+from ui2 import Ui_MainWindow
 import sys
 import homePage
 
@@ -200,7 +200,7 @@ class Ui_Form(object):
 
     def go_to_mainPage(self):
         self.window = QtWidgets.QMainWindow()
-        self.ui = gui8.Ui_MainWindow()
+        self.ui = ui2.Ui_MainWindow()
         self.ui.setupUi(self.window)
         self.window.show()
 

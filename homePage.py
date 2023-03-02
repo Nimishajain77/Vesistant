@@ -9,7 +9,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import login
 import ui_Registration
-import home_page
 import webbrowser
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):

@@ -48,7 +48,7 @@ from Ai_Assistant.features import electronics_dept
 
 engine = ts.init()
 voices = engine.getProperty('voices')
-engine.setProperty('voices', voices[1].id)
+engine.setProperty('voices', voices[0].id)
 
 class AiAssistant:
     def __init__(self):
@@ -59,25 +59,25 @@ class AiAssistant:
         Fetch input from mic
         return: user's voice input as text if true, false if fail
         """
-        try:
-            r = sr.Recognizer()
-            r.pause_threshold = 1
+        # try:
+        r = sr.Recognizer()
+        r.pause_threshold = 1
             # r.adjust_for_ambient_noise(source, duration=1)
-            with sr.Microphone() as source:
+        with sr.Microphone() as source:
                 print("Listening....")
                 r.energy_threshold = 400
                 audio = r.listen(source)
-            try:
+        try:
                 print("Recognizing...")
                 command = r.recognize_google(audio, language='en-in').lower()
                 print(f'You said: {command}')
-            except:
+        except:
                 print('Please try again')
                 command = self.mic_input()
-            return command
-        except Exception as e:
-            print(e)
-            return  False
+        return command
+        # except Exception as e:
+        #     print(e)
+        #     return False
 
 
     def tts(self, text):

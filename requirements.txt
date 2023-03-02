@@ -16,7 +16,7 @@ comtypes==1.1.7
 debugpy==1.5.1
 decorator==4.4.2
 dill==0.3.4
-dlib @ file:///C:/Users/bunty/OneDrive/Desktop/All%20Folders/Install-dlib-main/dlib-19.19.0-cp38-cp38-win_amd64.whl
+# dlib @ file:///C:/Users/bunty/OneDrive/Desktop/All%20Folders/Install-dlib-main/dlib-19.19.0-cp38-cp38-win_amd64.whl
 docopt==0.6.2
 face-recognition==1.3.0
 face-recognition-models==0.3.0
@@ -74,7 +74,7 @@ protobuf==3.14.0
 psutil==5.7.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-PyAudio @ file:///C:/Users/bunty/OneDrive/Desktop/All%20Folders/JARVIS-master/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
+# PyAudio @ file:///C:/Users/bunty/OneDrive/Desktop/All%20Folders/JARVIS-master/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 PyAutoGUI==0.9.52
 pycodestyle==2.6.0
 PyExecJS==1.5.1

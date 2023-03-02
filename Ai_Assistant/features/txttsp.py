@@ -13,5 +13,6 @@ def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
+# speak()
 
 # speak("Initializing system...")
